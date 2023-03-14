@@ -40,7 +40,7 @@ async function saveLetters(data) {
         const proxyUrl = 'https://corsproxy.io/?';
         const targetUrl = url;
         const proxiedUrl = proxyUrl + encodeURIComponent(targetUrl);
-
+        console.log(proxiedUrl)
         const response = await fetch(proxiedUrl);
         //const data = await response.text();
         return response;
