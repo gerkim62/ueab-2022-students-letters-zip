@@ -40,7 +40,7 @@ async function saveLetters(data) {
         const proxyUrl = 'https://corsproxy.io/?';
         const targetUrl = url||"https://ueab.ac.ke/wp-content/uploads/2022/KUCCPS2022/Admissions%20letters%201.pdf"
         const proxiedUrl = proxyUrl + encodeURIComponent(targetUrl);
-        console.log(proxiedUrl)
+        //console.log(proxiedUrl)
         
         const response = await fetch(proxiedUrl);
         //const data = await response.text();
